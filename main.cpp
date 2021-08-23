@@ -1,6 +1,5 @@
 #include <iostream>
 #include <stdlib.h>
-#include <vector>
 #include "include/sha256.h"
 using namespace std;
 
