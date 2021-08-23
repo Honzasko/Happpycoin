@@ -1,8 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <vector>
-#include <thread>
-#include "sha256.h"
+#include "include/sha256.h"
 using namespace std;
 
 unsigned int parts_end[255];
@@ -26,8 +25,8 @@ int zero(std::string hash_text)
   }
   return for_return;
 }
-std::string world = "1e136a3d0676409b76a7b99c1c55d654b8085a48ffaa95f9136f61bcce502f64";
-int zeros = 5;
+std::string world = "";//string with chain
+int zeros = 5;//chain require number of zeros
 void calc(int p_number)
 {
     if(!parts_finishes[p_number])
